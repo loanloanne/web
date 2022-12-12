@@ -1,64 +1,166 @@
 <html>
     <head>
-        
-         
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="Image/Logo/favicon.png"  type="image/x-icon">
+        <title>Về chúng tôi</title>
+         <link rel="stylesheet" href="vechungtoi.css">
     </head>
     
-
-    <body>
-        <table style="font-family:url('font/Fahkwang-Regular.ttf') ;">
-            <tr>
-                <td style="padding-left: 5mm; font-family: url('font/Fahkwang-Bold.ttf');">
-                    <h2 style="color: #DB9A50;">KHỞI NGUỒN</h2>
-                    <p><b>Thương hiệu bắt nguồn từ lá trà Việt Nam</b></p>
-                    <p>Từ tình yêu với Việt Nam và niềm đam mê trà sữa, năm 2022, thương hiệu MiuTea ra đời với khát vọng nâng tầm trà sữa của Việt Nam và lan rộng tinh thần tự hào, kết nối hài hoà giữa truyền thống với hiện đại.
+    <body class="body">
+        <div class="header" >
+            <div style="display: flex; justify-content: right;margin-top: 10px;">
+                <div  class="search">
+                    <form action="" id="search-box">
+                        <input id="search-text" type="text" placeholder="Tìm kiếm sản phẩm" required>
+                        <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+                <div id="login-btn">
+                    <a href="Dangnhap.html"> Đăng nhập</a>
+                </div>
+                <div>
+                    <a href="chitietgiohang.html"><img id="cart" src="Image/Logo/cart.png" alt=""></a>
+                </div>
+            </div>
+                <a href="#" class="toggle-btn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <script>
+                    function showMenu()
+                    {
+                        const menu = document.getElementsByClassName('menu')[0];
+                        menu.classList.toggle('active');
+                    }
+                    const toggleButton = document.getElementsByClassName('toggle-btn')[0];
+                    toggleButton.addEventListener("click", showMenu);
+                    
+                </script>
+            <div class="navbar" >
+                <div class="logo">
+                    <a  href="TrangChu.html"><img id="logo_ngang" src="Image/Logo/logo ngang.png" ></a>
+                </div>
+                <nav class="menu hidden" >
+                    <ul>
+                        <li><a href="TrangChu.html">Trang chủ</a></li>
+                        <li><a href="Cuahang.html">Cửa hàng</a></li>
+                        <li><a href="Menu.html">Thực đơn</a></li>
+                        <li><a href="tintucvauudai.html">Tin tức & Ưu đãi</a>
+                            <ul>
+                            <li><a href="tintuc.html">Tin tức & Sự kiện</a></li>
+                            <li><a href="uudai.html">Khuyến mãi</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="LienHe.html">Liên hệ</a>
+                                <ul>
+                                    <li><a href="#">Góp ý</a></li>
+                                    <li><a href="#">Hợp tác</a></li>
+                                </ul>
+                        </li>
+                                <li>
+                                    <a style="width: 150px;" href="VeChungToi.html">Về chúng tôi</a>
+                                    <ul>
+                                    <li style="width: 150px;"><a href="#">Khởi nguồn</a></li>
+                                    <li style="width: 150px;"><a href="#">Tuyển dụng</a></li>
+                                    <li style="width: 150px;"><a href="#">Thành viên</a></li>
+                                    </ul>
+                                </li>
+                        </ul>
+                </nav>
+            </div>
+            
+            
+            
+        </div >
+        
+        <div class="main-row">
+            <div class="row1" style="background-color: white;">
+                <div class="info" style="padding-left: 20px;">
+                    <h2 style="color: #DB9A50; ">KHỞI NGUỒN</h2>
+                    <p ><b>Thương hiệu bắt nguồn từ lá trà Việt Nam</b></p>
+                    <p >Từ tình yêu với Việt Nam và niềm đam mê trà sữa, năm 2022, thương hiệu MiuTea ra đời với khát vọng nâng tầm trà sữa của Việt Nam và lan rộng tinh thần tự hào, kết nối hài hoà giữa truyền thống với hiện đại.
                     </p>
                     <button name="vechungtoi" type="button" style="color: #F40303; border-color: #F40303; background-color: white; font-size: larger;padding-inline: 2%;">Xem chi tiết</button>
+                </div>
 
-                </td>
-                <td>
-                    <img src="Image/VeChungToi/VeChungToi.png" 
-                    height="400"
-                    width="750"/>
+                <div class="hinh">
+                    <img class="img" src="Image/VeChungToi/VeChungToi.png" />
+                </div>
+                
 
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="Image/VeChungToi/TuyenDung.png" 
-                    height="400"
-                    width="750"/>
-                </td>
-                <td style="background-color: #854C17; color: white; padding-left: 5mm;">
+            </div>
+            <div class="row2">
+                <div class="hinh">
+                    <img class="img" src="Image/VeChungToi/TuyenDung.png" 
                     
-                    <h2 style="color:white;font-family: url('font/Fahkwang-Bold.ttf');">TUYỂN DỤNG NHÂN VIÊN</h2>
-                    <p><b>Hãy trở  thành nhân viên của MiuTea</b></p>
-                    <p>Vươn mình trở thành thương hiệu trà sữa uy tín tại Việt Nam, MiuTea luôn tìm kiếm những ứng cử viên cùng chung đam mê. Hãy là một thành phần không thể thiếu của ngôi nhà MiuTea nhé.
+                    />
+                </div>
+                <div class="info" style="background-color: #854C17; color: white; padding-left: 20px;">
+                    <h2 style="color:white;font-family: url('font/Fahkwang-Bold.ttf'); ">TUYỂN DỤNG NHÂN VIÊN</h2>
+                    <p ><b>Hãy trở  thành nhân viên của MiuTea</b></p>
+                    <p >Vươn mình trở thành thương hiệu trà sữa uy tín tại Việt Nam, MiuTea luôn tìm kiếm những ứng cử viên cùng chung đam mê. Hãy là một thành phần không thể thiếu của ngôi nhà MiuTea nhé.
                     </p>
-                    <button name="tuyendung" type="button" style=" font-size: larger;padding-inline: 2%; ">Xem chi tiết</button>
+                    <button name="tuyendung" type="button" style=" font-size: larger;padding-inline: 2%;">Xem chi tiết</button>
+                </div>
 
-                </td>
-            </tr>
-            <tr>
-                <td style="padding-left: 5mm; background-color: #DCBEA6;color: white;">
-                    <h2 style="font-family: url('font/Fahkwang-Bold.ttf');">KHỞI NGUỒN</h2>
-                    <p><b>Thương hiệu bắt nguồn từ lá trà Việt Nam</b></p>
-                    <p>Từ tình yêu với Việt Nam và niềm đam mê trà sữa, năm 2022, thương hiệu MiuTea ra đời với khát vọng nâng tầm trà sữa của Việt Nam và lan rộng tinh thần tự hào, kết nối hài hoà giữa truyền thống với hiện đại.
+            </div>
+            <div class="row1">
+               
+                <div class="info" style=" background-color: #DCBEA6;color: white; padding-left: 20px;">
+                    <h2 style="font-family: url('font/Fahkwang-Bold.ttf'); ">THÀNH VIÊN</h2>
+                    <p ><b>Chào mừng bạn đến với MiuTea</b></p>
+                    <p >Hãy nhanh tay đăng ký trở thành thành viên của MiuTea để dành ngay ưu đãi hấp dẫn dành riêng cho bạn ngay nào!
                     </p>
-                    <button name="vechungtoi" type="button" style=" font-size: larger;padding-inline: 2%;">Xem chi tiết</button>
+                    <button name="vechungtoi" type="button" style=" font-size: larger;padding-inline: 2%; ">Xem chi tiết</button>
 
-                </td>
-                <td >
-                    <img src="Image/VeChungToi/Thanhvien.png" 
-                    height="400"
-                    width="750"/>
+                </div>
+                <div class="hinh" >
+                    <img class="img" src="Image/VeChungToi/Thanhvien.png" 
+                    
+                    />
+                </div>
 
-                </td>
-            </tr>
+            </div>
+
+        </div>
+            <script language="JavaScript">
+
+                var Submit = document.getElementById("btn_submit");
+            Submit.onclick = function(){
+
+                location.replace("Dangkythanhvien.html");
+            }
+            </script> 
+        
+        <footer>
+            <div class="row">
+                <div class="col">
+                    <a href=""><img class="logo" src="Image/Logo/logo.png" ></a></div>
+                <div class="col">
+                    <a href="#"><h3>Về chúng tôi</h3> </a>
+                        <a href="#"><p>Khởi nguồn</p> </a>
+                        <a href="#"><p>Quy định chung</p> </a>
+                </div>
+                <div class="col">
+                    <a href="#"><h3>Liên hệ</h3> </a>
+                        <a href="#"><p>Góp ý</p> </a>
+                        <a href="#"><p>Hợp tác</p> </a>
+                </div>
+                <div class="col3">
+                    <a href="#"><img class="icon" src="Image/social/facebook.png"></a>
+                    <a href="#"><img class="icon" src="Image/social/igic.png"></a>
+                    <a href="#"><img class="icon" src="Image/social/twitteric.png"></a>
+                    <a href="#"><img class="icon" src="Image/social/ytbic.png"></a> 
+                    <p><a href="#"><img class="icon" src="Image/social/mailic.png"></a>info@miutea.com.vn</p>
+    
+                </div>
+            </div>
             
-        </table>
+        </footer>
     </body>
-
-
 
 </html>

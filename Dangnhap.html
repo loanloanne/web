@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Image/Logo/favicon.png"  type="image/x-icon">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="Dangnhap.css">
+   
+</head>
+<body>
+    <div id="container">
+        <!-- Header -->
+        <div class="header" >
+            <div style="display: flex; justify-content: right;margin-top: 10px;">
+                <div  class="search">
+                    <form action="" id="search-box">
+                        <input id="search-text" type="text" placeholder="Tìm kiếm sản phẩm" required>
+                        <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+                <div id="login-btn">
+                    <a href="Dangnhap.html"> Đăng nhập</a>
+                </div>
+                <div>
+                    <a href="chitietgiohang.html"><img id="cart" src="Image/Logo/cart.png" alt=""></a>
+                </div>
+            </div>
+                <a href="#" class="toggle-btn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <script>
+                    function showMenu()
+                    {
+                        const menu = document.getElementsByClassName('menu')[0];
+                        menu.classList.toggle('active');
+                    }
+                    const toggleButton = document.getElementsByClassName('toggle-btn')[0];
+                    toggleButton.addEventListener("click", showMenu);
+                    
+                </script>
+            <div class="navbar" >
+                <div class="logo">
+                    <a  href="TrangChu.html"><img id="logo_ngang" src="Image/Logo/logo ngang.png" ></a>
+                </div>
+                <nav class="menu hidden" >
+                    <ul>
+                        <li><a href="TrangChu.html">Trang chủ</a></li>
+                        <li><a href="Cuahang.html">Cửa hàng</a></li>
+                        <li><a href="Menu.html">Thực đơn</a></li>
+                        <li><a href="tintucvauudai.html">Tin tức & Ưu đãi</a>
+                            <ul>
+                            <li><a href="tintuc.html">Tin tức & Sự kiện</a></li>
+                            <li><a href="uudai.html">Khuyến mãi</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="LienHe.html">Liên hệ</a>
+                                <ul>
+                                    <li><a href="#">Góp ý</a></li>
+                                    <li><a href="#">Hợp tác</a></li>
+                                </ul>
+                        </li>
+                                <li>
+                                    <a style="width: 150px;" href="VeChungToi.html">Về chúng tôi</a>
+                                    <ul>
+                                    <li style="width: 150px;"><a href="#">Khởi nguồn</a></li>
+                                    <li style="width: 150px;"><a href="#">Tuyển dụng</a></li>
+                                    <li style="width: 150px;"><a href="#">Thành viên</a></li>
+                                    </ul>
+                                </li>
+                        </ul>
+                </nav>
+            </div>
+            
+            
+            
+        </div >
+        <!-- Content -->
+            <div class="contentpopup">
+               <!-- Đăng nhập -->
+                <div class="popup" id="popup1">
+                    <div class="btn_close"> &times;</div>
+                    <!-- <div class="logo"><img src="Image/Logo/logo.png" alt="Logo"></div> -->
+                    <div class="title">MiuTea xin chào!</div>
+                    <div class="subtitle"> Đăng nhập</div>
+                    <form action="#" class="form">
+                        <input id="sdt" type="text" required name="Sodienthoai"  placeholder="Số điện thoại *" style="height: 35px; width: 250px; padding: 8px; border-radius: 5px; border: 1px solid#000000; margin-top: 30px;"><br>
+                     
+                        <input type="button" value="ĐĂNG NHẬP" id="btn_login">
+            
+                    </form>
+                 </div>
+               
+                 <!-- Xác thực OTP -->
+                 <div class="popup" id="popup2">
+                    <div class="btn_close"> &times;</div>
+                    <div class="title">MiuTea xin chào!</div>
+                    <div class="subtitle1">Nhập mã OTP vừa gửi đến</div>
+                    <form action="#" class="form">
+                        <input id="OTP" type="text" name="MaOTP" placeholder="Nhập mã OTP *" style="height: 35px; width: 250px; padding: 8px; border-radius: 5px; border: 1px solid#000000; margin-top: 10px;"><br>
+                        <input type="button" value="Xác minh tài khoản" id="btn_verify">
+                    </form>
+                    <div class="opt_text"> Bạn chưa nhận được mã?</div>
+                    <div class="opt_text" style="color: #EAAA75;"> Thử lại nhé!</div>
+                 </div>
+                 <div> <img src="Image/Logo/LogoforLogin.png" alt="Logo" class="imglogoforpopup"></div>
+            </div>
+
+       
+       
+        <!-- footer -->
+        <footer>
+            <div class="row">
+                <div class="col">
+                    <a href=""><img class="logo" src="Image/Logo/logo.png" ></a></div>
+                <div class="col">
+                    <a href="#"><h3>Về chúng tôi</h3> </a>
+                        <a href="#"><p>Khởi nguồn</p> </a>
+                        <a href="#"><p>Quy định chung</p> </a>
+                </div>
+                <div class="col">
+                    <a href="#"><h3>Liên hệ</h3> </a>
+                        <a href="#"><p>Góp ý</p> </a>
+                        <a href="#"><p>Hợp tác</p> </a>
+                </div>
+                <div class="col3">
+                    <a href="#"><img class="icon" src="Image/social/facebook.png"></a>
+                    <a href="#"><img class="icon" src="Image/social/igic.png"></a>
+                    <a href="#"><img class="icon" src="Image/social/twitteric.png"></a>
+                    <a href="#"><img class="icon" src="Image/social/ytbic.png"></a> 
+                    <p><a href="#"><img class="icon" src="Image/social/mailic.png"></a>info@miutea.com.vn</p>
+    
+                </div>
+            </div>
+            
+        </footer>
+    </div>
+    <script language="JavaScript">
+        var Form1 = document.getElementById("popup1");
+        var Form2 = document.getElementById("popup2");
+        var inputPhone = document.getElementById('sdt');
+        var inputOTP = document.getElementById('OTP');
+        var Login = document.getElementById("btn_login");
+        var Verify = document.getElementById("btn_verify");
+
+
+    Login.onclick= function() {
+        
+           if( !inputPhone.value)
+            {
+                    alert("Hãy nhập số điện thoại của bạn!");
+                    inputPhone.value ="";
+                    inputPhone.focus();
+                }
+                // admin sdt 0123456789
+            else if(inputPhone.value=='0123456789'){
+                alert("Đăng nhập với tư cách adminh thành công!");
+                 window.location.href = "admindashboard.html";
+
+            }
+            else {
+                console.log(inputPhone.value);
+                Form1.style.left = "-600px";
+                Form2.style.left = "50%";
+                Form2.style.visibility = "visible";
+            }
+      } 
+
+      Verify.onclick = function(){
+        if( !inputOTP.value)
+        {
+            alert("Hãy nhập mã OTP mà bạn được nhận để thực hiện đăng nhập!");
+            inputOTP.value ="";
+            inputOTP.focus();
+        }
+        else{
+            alert("Đăng nhập thành công!");
+            window.location.href = "Dangkythanhvien.html";
+            console.log(this);
+        }
+        
+           
+        }  
+    </script>  
+</body>
+</html>

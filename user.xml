@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+   <user>
+      <name>Nguyễn Trần Thảo Huyền</name>
+      <address>Linh Chiểu, Thủ Đức</address>
+      <email>huyenntt20411@st.uel.edu.vn</email>
+      <phonenumber>0946372846</phonenumber>
+   </user>
+      <user>
+      <name>Nguyễn Thị Mỹ Hương</name>
+      <address>Linh Chiểu, Thủ Đức</address>
+      <email>huongntm20411@st.uel.edu.vn</email>
+      <phonenumber>0372748364</phonenumber>
+   </user>
+    <user>
+      <name>Trần Thị Mỹ Linh</name>
+      <address>Linh Chiểu, Thủ Đức</address>
+      <email>linhttm20411@st.uel.edu.vn</email>
+      <phonenumber>0946372847</phonenumber>
+   </user>
+    <user>
+      <name>Phan Thị Bích Dâng</name>
+      <address>Linh Chiểu, Thủ Đức</address>
+      <email>dangptb20411@st.uel.edu.vn</email>
+      <phonenumber>0946372847</phonenumber>
+   </user>
+    <user>
+      <name>Trần Thị Kim Loan</name>
+      <address>Linh Chiểu, Thủ Đức</address>
+      <email>loanttk20411@st.uel.edu.vn</email>
+      <phonenumber>0946372847</phonenumber>
+   </user>
+   
+   
+</users>

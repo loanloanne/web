@@ -8,115 +8,241 @@
     <title>Trà sữa MiuTea</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </head>
-<body>
-
-<div id="header" >
-     <div class="logo">
-        <a  href=""><img id="logo_ngang" src="Image/Logo/logo ngang.png" ></a>
-     </div>
-
-    <nav class="menu">
-        <ul>
-            <li><a href="#">Trang chủ</a></li>
-            <li><a href="#">Cửa hàng</a></li>
-            <li><a href="#">Thực đơn</a></li>
-            <li><a href="#">Tin tức & Ưu đãi</a>
-                <ul>
-                <li><a href="#">Tin tức & Sự kiện</a></li>
-                <li><a href="#">Khuyến mãi</a></li>
-                 </ul>
-            </li>
-            <li>
-                <a href="#">Liên hệ</a>
-                    <ul>
-                        <li><a href="#">Góp ý</a></li>
-                        <li><a href="#">Hợp tác</a></li>
-                    </ul>
-            </li>
-                    <li>
-                        <a style="width: 150px;" href="#">Về chúng tôi</a>
-                        <ul>
-                        <li style="width: 150px;"><a href="#">Khởi nguồn</a></li>
-                        <li style="width: 150px;"><a href="#">Tuyển dụng</a></li>
-                        <li style="width: 150px;"><a href="#">Thành viên</a></li>
-                        </ul>
-                    </li>
-            </ul>
+<body style="background-image:url('Image/banner/background.png');">
+<div class="content">
+    <div class="header" >
+        <div style="display: flex; justify-content: right;margin-top: 10px;">
             <div  class="search">
                 <form action="" id="search-box">
                     <input id="search-text" type="text" placeholder="Tìm kiếm sản phẩm" required>
-                    <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button id="search-button" onclick="searchProduct()"><i class="fa-solid fa-magnifying-glass" ></i></button>
                 </form>
             </div>
             <div id="login-btn">
-                <a href=""> Đăng nhập</a>
+                <a href="Dangnhap.html"> Đăng nhập</a>
             </div>
             <div>
-                <a href=""><img id="cart" src="Image/Logo/cart.png" alt=""></a>
+                <a href="chitietgiohang.html"><img id="cart" src="Image/Logo/cart.png" alt=""></a>
             </div>
-    </nav>
-</div >
-
-<!-- body -->
-    <!-- running banner -->
-<div id="body">
-
-    <div class="slider">
-        <div class="sliders">
-            <!-- radio button start -->
-            <input type="radio" name="radio-btn" id="rad1">
-            <input type="radio" name="radio-btn" id="rad2">
-            <input type="radio" name="radio-btn" id="rad3">
-            <!-- radio button end -->
-            <!-- slide image start -->
-            <!-- <div class="slider">
-                <img src="Image/banner/banner tin tức/banner_TraTraiCay.jpg" >
-            </div> -->
-            <!-- <div class="slide first">
-                <img src="Image/banner/banner tin tức/banner_Summer.jpg" >
+        </div>
+            <a href="#" class="toggle-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <script>
+                function showMenu()
+                {
+                    const menu = document.getElementsByClassName('menu')[0];
+                    menu.classList.toggle('active');
+                }
+                const toggleButton = document.getElementsByClassName('toggle-btn')[0];
+                toggleButton.addEventListener("click", showMenu);
+                
+            </script>
+        <div class="navbar" >
+            <div class="logo">
+                <a  href="TrangChu.html"><img id="logo_ngang" src="Image/Logo/logo ngang.png" ></a>
             </div>
-            <div class="slide first">
-                <img src="Image/banner/banner tin tức/banner_valentine.jpg" >
-            </div> -->
-             <!-- slide image end -->
-             <!-- automatic navigation start -->
-             <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-             </div>
-             <!-- automatic navigation end -->
+            <nav class="menu hidden" >
+                <ul>
+                    <li><a href="TrangChu.html">Trang chủ</a></li>
+                    <li><a href="Cuahang.html">Cửa hàng</a></li>
+                    <li><a href="Menu.html">Thực đơn</a></li>
+                    <li><a href="tintucvauudai.html">Tin tức & Ưu đãi</a>
+                        <ul>
+                        <li><a href="tintuc.html">Tin tức & Sự kiện</a></li>
+                        <li><a href="uudai.html">Khuyến mãi</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="LienHe.html">Liên hệ</a>
+                            <ul>
+                                <li><a href="#">Góp ý</a></li>
+                                <li><a href="#">Hợp tác</a></li>
+                            </ul>
+                    </li>
+                            <li>
+                                <a style="width: 150px;" href="VeChungToi.html">Về chúng tôi</a>
+                                <ul>
+                                <li style="width: 150px;"><a href="#">Khởi nguồn</a></li>
+                                <li style="width: 150px;"><a href="tuyendung.html">Tuyển dụng</a></li>
+                                <li style="width: 150px;"><a href="thanhvien.html">Thành viên</a></li>
+                                </ul>
+                            </li>
+                    </ul>
+            </nav>
         </div>
-        <!-- manual navigation start -->
-        <div class="navigation-manual">
-            <label for="rad1" class="manual-btn"></label>
-            <label for="rad2" class="manual-btn"></label>
-            <label for="rad3" class="manual-btn"></label>
+        
+        
+        
+    </div >
+   
+    <div class="center">
+         <!-- slider -->
+        <div class="slider">
+         <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+            <div class="item active">
+                <img src="Image/banner/bannerTinTuc/banner.jpg" alt="" style="width:100%;">
+            </div>
+
+            <div class="item">
+                <img src="Image/banner/bannerTinTuc/banner_Summer.jpg" alt="" style="width:100%;">
+            </div>
+            
+            <div class="item">
+                <img src="Image/banner/bannerTinTuc/tintuc4.jpg" alt="" style="width:100%;">
+            </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+            </a>
         </div>
-        <!-- manual navigation end -->
-    </div>
-    <!-- image slider end -->
+        </div>
+        <!-- Bán chạy nhất + Món mới -->
+        <div style="width: 100%;"> 
+            <!-- bán chạy nhất -->
+            <div class="banChayNhat">
+                <h4>Bán chạy nhất</h4>
+                <img src="Image/banner/bannerTinTuc/tintuc5.jpg" >
+                <button><a href="#">Khám phá ngay</a></button>
+            </div>
+            <div class="line"><img style="float:left; margin-top: 70px;" src="Image/VeChungToi/Line 1.png">
+                </div>
+                <!-- món mới -->
+            <div class="ThucUongMoi">
+                <h4>Món mới</h4>
+                <img src="Image/banner/bannerTinTuc/tintuc4.jpg" > 
+                <button><a href="#">Khám phá ngay</a></button>  
+            </div>
+        </div>
+        <!-- Thức uống đặc biệt -->
+         <div class="ThucUongDacBiet" style="width: 100%;display: flex;">
+            <div class="image">
+                <img src="Image/banner/bannerTinTuc/thucUongDacBiet.jpg" >
+            </div>
+            
+            <div class="mota">
+                <h4 style="color: #DB9A5E; font-size: 18px; font-family: Fahwang-Bold; margin: 20px 0;">Thức uống đặc biệt</h4>
+                <p style="width: 90%;  line-height: 25px;">Trà trái cây - với nguyên liệu chính là những là trà khô, 
+                    kết hợp cùng với những loại trái cây nhiệt đới khác nhau 
+                    (đào, xoài, dứa, vải, chanh…) để tạo thành loại trà có 
+                    hương và vị trái cây thanh mát, dễ uống và giải nhiệt tốt.</p>
+                    <button><a href="#">Đặt ngay</a></button>
+            </div>
+         </div> 
+         <br>
+         <div class="mainBot">
+                <div class="col">
+                    <div class="khoiNguon">
+                        <a href="KhoiNguon.html"><img src="Image/VeChungToi/khởi nguồn.png" alt="KHỞI NGUỒN">
+                       
+                    </div>
+    
+                </div>
+                <!-- Danh sách quán -->
+                <div class="col">
+                    <div class="cuaHang"><a href="Cuahang.html"><img src="Image/VeChungToi/Cửa hàng.png" alt="Cửa hàng">
+                        <!-- <a href=""><span>KHỞI NGUỒN <br>
+                            THƯƠNG HIỆU BẮT NGUỒN TỪ LÁ TRÀ</span></a> -->
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!-- Tin tức mới nhất -->
+                <div class="col">
+                    <div class="wrap fl">
+                        <div class="boxHome lazy-start fadeIn" data-eff="fadeIn" data-delay="0.3" style="animation-delay: 0.3s;">
+                            <div class="title"><h3>Tin mới nhất</h3><a href="tintuc.html"><span><i>Xem toàn bộ</i> </span></a></div>
+                            <div class="content">
+                                <div class="listNew">
+                                    <div class="news">
+                                        <div class="img">
+                                            <div class="wrap">
+                                                <a href="#"><img src="Image/banner/bannerTinTuc/tintuc3.jpg" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="caption">
+                                            <div class="tend"><h3><a href="#">Khám phá chi nhánh mới của Miutea ngay nào !</a></h3></div>
+                                            <div class="date"><span>01/11/2022</span></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="news">
+                                        <div class="img">
+                                            <div class="wrap">
+                                                <a href="#"><img src="Image/banner/bannerTinTuc/TinTuc1.jpg" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="caption">
+                                            <div class="tend"><h3><a href="#">MiuTea ra mắt sản phẩm Trà sữa matcha trân châu xanh</a></h3></div>
+                                            <div class="date"><span>08/10/2022</span></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="news">
+                                        <div class="img">
+                                            <div class="wrap">
+                                                <a href="#"><img src="Image/banner/bannerTinTuc/banner_valentine.jpg" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="caption">
+                                            <div class="tend"><h3><a href="#">Đến MiuTea nhận ngay ưu đãi Valentine</a></h3></div>
+                                            <div class="date"><span>11/03/2022</span></div>
+                                        </div>
+                                    </div>
+        
+                                </div>
+                                <div class="formRecive">
+                                    <form id="formNewsletter" name="formNewsletter" method="post" action="" onsubmit="return registerMaillist(this);">
+                                        <input type="text" name="femail" id="femail" placeholder="Nhập email của bạn để nhận thông tin...">
+                                        <button type="submit"><span>Gửi</span></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="clear"></div> -->
+                </div>
+            <!-- </div> -->
+        </div>
+    </div>  
 
-    </div>
-
-
-
-    <div id="footer">
+    <footer>
         <div class="row">
             <div class="col">
-                <a href=""><img class="logo" src="Image/Logo/logo.png" ></a></div>
+                <a href="TrangChu.html"><img class="logo" src="Image/Logo/logo.png" ></a></div>
             <div class="col">
-                <a href="#"><h3>Về chúng tôi</h3> </a>
-                    <a href="#"><p>Khởi nguồn</p> </a>
-                    <a href="#"><p>Quy định chung</p> </a>
+                <a href="VeChungToi.html"><h3>Về chúng tôi</h3> </a>
+                    <a href="KhoiNguon.html"><p>Khởi nguồn</p> </a>
+                    <a href="quanlycuahang.html"><p>Quy định chung</p> </a>
             </div>
             <div class="col">
-                <a href="#"><h3>Liên hệ</h3> </a>
+                <a href="LienHe.html"><h3>Liên hệ</h3> </a>
                     <a href="#"><p>Góp ý</p> </a>
                     <a href="#"><p>Hợp tác</p> </a>
             </div>
-            <div class="col">
+            <div class="col3">
                 <a href="#"><img class="icon" src="Image/social/facebook.png"></a>
                 <a href="#"><img class="icon" src="Image/social/igic.png"></a>
                 <a href="#"><img class="icon" src="Image/social/twitteric.png"></a>
@@ -125,6 +251,7 @@
 
             </div>
         </div>
-    </div>
+        
+    </footer>
 </body>
 </html>

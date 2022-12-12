@@ -1,0 +1,37 @@
+@font-face {
+    font-family: Fahwang;
+    src: url(font/Fahkwang-Regular.ttf);
+}
+@font-face {
+    font-family: Fahwang-SemiBold;
+    src: url(font/Fahkwang-SemiBold.ttf);
+}
+@font-face {
+    font-family: Fahwang-Bold;
+    src: url(font/Fahkwang-Bold.ttf);
+}
+div.body{
+    font-family: Fahwang;
+    width:400px;
+  margin: auto;
+  border: 1px solid #000000;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+#hinh{
+    flex-basis:40%;
+}
+#thongtin{
+    padding: 10px;
+    flex-basis: 60%;
+}
+#top{
+    display: flex;
+}
+#btn_addtocart{
+    border: 1px solid#000000;
+    background: #EAAA75;
+    font-family: Fahwang; 
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="header" >
+        <div style="display: flex; justify-content: right;margin-top: 10px;">
+            <div  class="search">
+                <form action="" id="search-box">
+                    <input id="search-text" type="text" placeholder="Tìm kiếm sản phẩm" required>
+                    <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <div id="login-btn">
+                <a href="Dangnhap.html"> Đăng nhập</a>
+            </div>
+            <div>
+                <a href="chitietgiohang.html"><img id="cart" src="Image/Logo/cart.png" alt=""></a>
+            </div>
+        </div>
+            <a href="#" class="toggle-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <script>
+                function showMenu()
+                {
+                    const menu = document.getElementsByClassName('menu')[0];
+                    menu.classList.toggle('active');
+                }
+                const toggleButton = document.getElementsByClassName('toggle-btn')[0];
+                toggleButton.addEventListener("click", showMenu);
+                
+            </script>
+        <div class="navbar" >
+            <div class="logo">
+                <a  href="TrangChu.html"><img id="logo_ngang" src="Image/Logo/logo ngang.png" ></a>
+            </div>
+            <nav class="menu hidden" >
+                <ul>
+                    <li><a href="TrangChu.html">Trang chủ</a></li>
+                    <li><a href="Cuahang.html">Cửa hàng</a></li>
+                    <li><a href="Menu.html">Thực đơn</a></li>
+                    <li><a href="tintucvauudai.html">Tin tức & Ưu đãi</a>
+                        <ul>
+                        <li><a href="tintuc.html">Tin tức & Sự kiện</a></li>
+                        <li><a href="uudai.html">Khuyến mãi</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="LienHe.html">Liên hệ</a>
+                            <ul>
+                                <li><a href="#">Góp ý</a></li>
+                                <li><a href="#">Hợp tác</a></li>
+                            </ul>
+                    </li>
+                            <li>
+                                <a style="width: 150px;" href="VeChungToi.html">Về chúng tôi</a>
+                                <ul>
+                                <li style="width: 150px;"><a href="#">Khởi nguồn</a></li>
+                                <li style="width: 150px;"><a href="#">Tuyển dụng</a></li>
+                                <li style="width: 150px;"><a href="#">Thành viên</a></li>
+                                </ul>
+                            </li>
+                    </ul>
+            </nav>
+        </div>
+        
+        
+        
+    </div >
+    <div id="center">
+        <div id="sidebar">
+            <div id="danhmuc">
+                <ul class="listdanhmuc">
+                    <li><a href="">Tất cả</a></li>
+                    <li><a href="Menuspbanchay.html">Bán chạy nhất</a></li>
+                    <li><a href="menumoinhat.html">Mới nhất</a></li>
+                    <li><a href="Menutrasua.html">Trà sữa</a></li>
+                    <li><a href="Menumachiato.html">Machiato</a></li>
+                    <li><a href="Menukhac.html">Khác</a></li>
+                </ul>
+            </div>
+            <h4 ><a href="">Xem giỏ hàng</a></h4>
+    
+        </div>
+        <div id="menu1">
+         <div class="headline">
+            <h2>Sản phẩm bán chạy</h2>
+         </div>
+         <ul class="products">
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product_thumb">
+                            <img src="Image/sourcesp/Trà sữa/Hong-Tra.png"
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product_cat">Hồng trà</a>
+                        <div class="product-pri">40.000</div>
+                       <h4>Thêm
+                       </h4>
+                    </div>
+    
+    
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product_thumb">
+                            <img src="Image/sourcesp/Trà sữa/Tra-Sua-Bac-Ha.png"
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product_cat">Trà sữa bạc hà </a>
+                        <div class="product-pri">45.000</div>
+                        <h4><a href="">Thêm</a>
+                        </h4>
+                    </div>
+    
+    
+                </div>
+            </li> <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product_thumb">
+                            <img src="Image/sourcesp/Trà sữa/Tra-Sua-Dau-Tay.png"
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product_cat">Trà sữa dâu tây</a>
+                        <div class="product-pri">40.000</div>
+                        <h4><a href="">Thêm</a>
+                        </h4>
+                    </div>
+    
+    
+                </div>
+            </li> <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product_thumb">
+                            <img src="Image/sourcesp/Trà sữa/Tra-Sua-Miutea.png"
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product_cat">Trà sữa MiuTea</a>
+                        <div class="product-pri">50.000</div>
+                        <h4><a href="">Thêm</a>
+                        </h4>
+                    </div>
+    
+    
+                </div>
+            </li> <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product_thumb">
+                            <img src="Image/sourcesp/Trà sữa/Tra-Xanh-2.png"
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product_cat">Trà xanh</a>
+                        <div class="product-pri">45.000</div>
+                        <h4><a href="">Thêm</a>
+                        </h4>
+                    </div>
+    
+    
+                </div>
+            </li> <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product_thumb">
+                            <img src="Image/sourcesp/Trà sữa/Trà sữa Olong.png"
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product_cat">Trà sữa Olong</a>
+                        <div class="product-pri">50.000</div>
+                        <h4><a href="">Thêm</a>
+                        </h4>
+                    </div>
+    
+    
+                </div>
+            </li> <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product_thumb">
+                            <img src="Image/sourcesp/Trà sữa/Trà xanh sữa vị nhài.png"
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product_cat">Trà xanh sữa vị nhài</a>
+                        <div class="product-pri">50.000</div>
+                        <h4><a href="">Thêm</a>
+                        </h4>
+                    </div>
+    
+    
+                </div>
+            </li> <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product_thumb">
+                            <img src="Image/sourcesp/Trà sữa/Ô long thái cực.png"
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product_cat">Ô long thái cực</a>
+                        <div class="product-pri">45.000</div>
+                        <h4><a href="">Thêm</a>
+                        </h4>
+                    </div>
+    
+    
+                </div>
+            </li> <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product_thumb">
+                            <img src="Image/sourcesp/Trà sữa/Tra-Sua-Socola.png"
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product_cat">Trà sữa socola</a>
+                        <div class="product-pri">40.000</div>
+                        <h4><a href="">Thêm</a>
+                        </h4>
+                    </div>
+    
+    
+                </div>
+            </li>
+         </ul>    
+    
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col">
+                <a href=""><img class="logo" src="Image/Logo/logo.png" ></a></div>
+            <div class="col">
+                <a href="#"><h3>Về chúng tôi</h3> </a>
+                    <a href="#"><p>Khởi nguồn</p> </a>
+                    <a href="#"><p>Quy định chung</p> </a>
+            </div>
+            <div class="col">
+                <a href="#"><h3>Liên hệ</h3> </a>
+                    <a href="#"><p>Góp ý</p> </a>
+                    <a href="#"><p>Hợp tác</p> </a>
+            </div>
+            <div class="col3">
+                <a href="#"><img class="icon" src="Image/social/facebook.png"></a>
+                <a href="#"><img class="icon" src="Image/social/igic.png"></a>
+                <a href="#"><img class="icon" src="Image/social/twitteric.png"></a>
+                <a href="#"><img class="icon" src="Image/social/ytbic.png"></a> 
+                <p><a href="#"><img class="icon" src="Image/social/mailic.png"></a>info@miutea.com.vn</p>
+
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>

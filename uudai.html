@@ -12,60 +12,81 @@
 </head>
 <body>
     <div id="vnt-container">
-        <div id="header"> 
-            <div class="logo">
-                <a  href=""><img id="logo_ngang" src="Image/Logo/logo ngang.png" ></a>
-             </div>
-        
-            <nav class="menu">
-                <ul>
-                    <li><a href="#">Trang chủ</a></li>
-                    <li><a href="#">Cửa hàng</a></li>
-                    <li><a href="#">Thực đơn</a></li>
-                    <li><a href="#">Tin tức & Ưu đãi</a>
-                        <ul>
-                        <li><a href="#">Tin tức & Sự kiện</a></li>
-                        <li><a href="#">Khuyến mãi</a></li>
-                         </ul>
-                    </li>
-                    <li>
-                        <a href="#">Liên hệ</a>
-                            <ul>
-                                <li><a href="#">Góp ý</a></li>
-                                <li><a href="#">Hợp tác</a></li>
-                            </ul>
-                    </li>
-                            <li>
-                                <a style="width: 150px;" href="#">Về chúng tôi</a>
-                                <ul>
-                                <li style="width: 150px;"><a href="#">Khởi nguồn</a></li>
-                                <li style="width: 150px;"><a href="#">Tuyển dụng</a></li>
-                                <li style="width: 150px;"><a href="#">Thành viên</a></li>
-                                </ul>
-                            </li>
-                    </ul>
-                    <div  class="search">
-                        <form action="" id="search-box">
-                            <input id="search-text" type="text" placeholder="Tìm kiếm sản phẩm" required>
-                            <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        </form>
-                    </div>
-                    <div id="login-btn">
-                        <a href=""> Đăng nhập</a>
-                    </div>
-                    <div>
-                        <a href=""><img id="cart" src="Image/Logo/cart.png" alt=""></a>
-                    </div>
-            </nav>
-        </div>
-        <div id="content">
-            <center><img src="Image/banner/bannerTinTuc/banner_TraTraiCay.jpg" alt="banner" style=" width: 1260px;"> <br>  </center>
-            <!-- đây là div ưu đãi -->
-        <div id="uudai">
-            <div style="height: 70px;text-align: center ;margin-top: 50px;"><img style="float:left; margin-left: 80px;" src="Image/banner/bannerTinTuc/Line 1.png"><h1 style="float: left;"> &nbsp ƯU ĐÃI</h1> 
-                <a href="tintucvauudai.html"><p class="text" style="float:right ; margin-right: 100px; margin-top: 40px">Trở lại</p></a>
+        <div class="header" >
+            <div style="display: flex; justify-content: right;margin-top: 10px;">
+                <div  class="search">
+                    <form action="" id="search-box">
+                        <input id="search-text" type="text" placeholder="Tìm kiếm sản phẩm" required>
+                        <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+                <div id="login-btn">
+                    <a href="Dangnhap.html"> Đăng nhập</a>
+                </div>
+                <div>
+                    <a href="chitietgiohang.html"><img id="cart" src="Image/Logo/cart.png" alt=""></a>
+                </div>
             </div>
-            <div class="box-cha">
+                <a href="#" class="toggle-btn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <script>
+                    function showMenu()
+                    {
+                        const menu = document.getElementsByClassName('menu')[0];
+                        menu.classList.toggle('active');
+                    }
+                    const toggleButton = document.getElementsByClassName('toggle-btn')[0];
+                    toggleButton.addEventListener("click", showMenu);
+                    
+                </script>
+            <div class="navbar" >
+                <div class="logo">
+                    <a  href="TrangChu.html"><img id="logo_ngang" src="Image/Logo/logo ngang.png" ></a>
+                </div>
+                <nav class="menu hidden" >
+                    <ul>
+                        <li><a href="TrangChu.html">Trang chủ</a></li>
+                        <li><a href="Cuahang.html">Cửa hàng</a></li>
+                        <li><a href="Menu.html">Thực đơn</a></li>
+                        <li><a href="tintucvauudai.html">Tin tức & Ưu đãi</a>
+                            <ul>
+                            <li><a href="tintuc.html">Tin tức & Sự kiện</a></li>
+                            <li><a href="uudai.html">Khuyến mãi</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="LienHe.html">Liên hệ</a>
+                                <ul>
+                                    <li><a href="#">Góp ý</a></li>
+                                    <li><a href="#">Hợp tác</a></li>
+                                </ul>
+                        </li>
+                                <li>
+                                    <a style="width: 150px;" href="VeChungToi.html">Về chúng tôi</a>
+                                    <ul>
+                                    <li style="width: 150px;"><a href="#">Khởi nguồn</a></li>
+                                    <li style="width: 150px;"><a href="#">Tuyển dụng</a></li>
+                                    <li style="width: 150px;"><a href="#">Thành viên</a></li>
+                                    </ul>
+                                </li>
+                        </ul>
+                </nav>
+            </div>
+            
+            
+            
+        </div >
+        <div class="content">
+            <center><img src="Image/banner/bannerTinTuc/banner_TraTraiCay.jpg" alt="banner" style=" width: 100%;"> <br>  </center>
+            <!-- đây là div ưu đãi -->
+        <div class="uudai">
+            <div style="height: 70px;text-align: center ;margin-top: 50px;"><img style="float:left; margin-left: 80px;" src="Image/banner/bannerTinTuc/Line 1.png"><h1 style="float: left;"> &nbsp ƯU ĐÃI</h1> 
+                <a href="tintucvauudai.html" style="float:right ; margin-right: 100px;text-decoration: none; margin-top: 40px">Trở lại</a>
+            </div>
+            <div class="box-cha" id="box-cha1">
                 <div class="box-con">
                     <div><img class="imgttud" src="Image/banner/bannerTinTuc/banner.jpg"></div>
                     <div  class="date"><span>12/07/2022</span></div>
@@ -81,7 +102,7 @@
                     ưu đãi 30% . Rủ rê bạn bè đến để thưởng thức
                      trà sữa xóa tan cái nóng ...</p></div>
                 </div>
-                <div class="box-con">
+                <div class="box-con" id="tintuc3">
                     <div><img class="imgttud" src="Image/banner/bannerTinTuc/tintuc5.jpg"></div>
                     <div class="date"><span>14/02/2022</span></div>
                     <div class="headlinettud"><h3>ƯU ĐÃI ĐẶC BIỆT NGÀY YÊU THƯƠNG</h3></div>
@@ -89,7 +110,7 @@
                     được ưu đãi đặc biệt mua 2 tặng 1 cho duy nhất ngày hôm nay...</p></div>
                 </div>
             </div> 
-            <div class="box-cha">
+            <div class="box-cha" id="box-cha2">
                 <div class="box-con">
                     <div><img class="imgttud" src="Image/banner/bannerTinTuc/tintuc2.jpg"></div>
                     <div class="date"><span>15/01/2022</span></div>
@@ -106,7 +127,7 @@
                     kế hiện đại, cho bạn một không gian 
                     thoải mái và lý tưởng nhất...</p></div>
                 </div>
-                <div class="box-con">
+                <div class="box-con" id="uudai3">
                     <div><img class="imgttud" src="Image/banner/bannerTinTuc/banner_valentine.jpg"></div>
                     <div  class="date"><span>14/02/2021</span></div>
                     <div  class="headlinettud"><h3>ƯU ĐÃI ĐẶC BIỆT NGÀY YÊU THƯƠNG </h3></div>
@@ -117,30 +138,32 @@
            
             
         </div>
-        <div id="footer">
-            <div class="row">
-                <div class="col">
-                    <a href=""><img class="logo" src="Image/Logo/logo.png" ></a></div>
-                <div class="col">
-                    <a href="#"><h3>Về chúng tôi</h3> </a>
-                        <a href="#"><p>Khởi nguồn</p> </a>
-                        <a href="#"><p>Quy định chung</p> </a>
-                </div>
-                <div class="col">
-                    <a href="#"><h3>Liên hệ</h3> </a>
-                        <a href="#"><p>Góp ý</p> </a>
-                        <a href="#"><p>Hợp tác</p> </a>
-                </div>
-                <div class="col">
-                    <a href="#"><img class="icon" src="Image/social/facebook.png"></a>
-                    <a href="#"><img class="icon" src="Image/social/igic.png"></a>
-                    <a href="#"><img class="icon" src="Image/social/twitteric.png"></a>
-                    <a href="#"><img class="icon" src="Image/social/ytbic.png"></a> 
-                    <p><a href="#"><img class="icon" src="Image/social/mailic.png"></a>info@miutea.com.vn</p>
-    
-                </div>
+      <!-- footer -->
+      <footer>
+        <div class="row">
+            <div class="col">
+                <a href=""><img class="logo" src="Image/Logo/logo.png" ></a></div>
+            <div class="col">
+                <a href="#"><h3>Về chúng tôi</h3> </a>
+                    <a href="#"><p>Khởi nguồn</p> </a>
+                    <a href="#"><p>Quy định chung</p> </a>
+            </div>
+            <div class="col">
+                <a href="#"><h3>Liên hệ</h3> </a>
+                    <a href="#"><p>Góp ý</p> </a>
+                    <a href="#"><p>Hợp tác</p> </a>
+            </div>
+            <div class="col3">
+                <a href="#"><img class="icon" src="Image/social/facebook.png"></a>
+                <a href="#"><img class="icon" src="Image/social/igic.png"></a>
+                <a href="#"><img class="icon" src="Image/social/twitteric.png"></a>
+                <a href="#"><img class="icon" src="Image/social/ytbic.png"></a> 
+                <p><a href="#"><img class="icon" src="Image/social/mailic.png"></a>info@miutea.com.vn</p>
+
             </div>
         </div>
+        
+    </footer>
    </div>
 </body>
 </html>
