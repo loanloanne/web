@@ -79,78 +79,23 @@
         <h1 style="text-align: center;font-family: url('font/Fahkwang-Bold.ttf');">GIỎ HÀNG</h1>
         <br/>
         <br/>
-        <table class="table-center" >
-            <tr class="spaceUnder">
-                <td>
-                    <div><img class="imgsp" src="Image/sourcesp/Món nổi bật/Ô long kem phô mai.png"></div>
-                </td>
-                <td >
-                    <p style="text-align: left; font-family: url('font/Fahkwang-Regular.ttf');">
-                        <b>Olong kem phô mai</b><br/><br/>
-                        40.000đ<br/>
-                        30% đường, 50% đá, trân châu đen<br/>
-                        Số lượng: 1
-                    </p>   
-                </td>
-                <td style="vertical-align: top;">
-                    <button class="btnXoa" name="xoasp" type="button" style="border: none; background-color: #EAAA75;" onclick="xoa(this)">Xóa</button>
-                </td>
-            </tr>
-            <tr class="spaceUnder">
-                <td>
-                    <div><img class="imgsp" src="Image/sourcesp/Món nổi bật/Royal-Pearl-Milk-Coffee.png"></div>
-                </td>
-                <td >
-                    <p style="text-align: left; font-family: url('font/Fahkwang-Regular.ttf');">
-                        <b>Royal Pearl Milk Coffee</b><br/><br/>
-                        50.000đ<br/>
-                        70% đường, 50% đá, trân châu đen<br/>
-                        Số lượng: 1
-                    </p>   
-                </td>
-                <td style="vertical-align: top;">
-                    <button class="btnXoa" name="xoasp" type="button" style="border: none; background-color: #EAAA75;" onclick="xoa(this)">Xóa</button>
-                </td>
-            </tr>
-            <tr class="spaceUnder">
-                <td>
-                    <div><img class="imgsp" src="Image/sourcesp/Món nổi bật/tra-man-hat-sen.png"></div>
-                </td>
-                <td >
-                    <p style="text-align: left; font-family: url('font/Fahkwang-Regular.ttf');">
-                        <b>Trà mận hạt sen</b><br/><br/>
-                        40.000đ<br/>
-                        100% đường, 70% đá, trân châu đen<br/>
-                        Số lượng: 1
-                    </p>   
-                </td>
-                <td style="vertical-align: top;">
-                    <button class="btnXoa" name="xoasp" type="button" style="border: none; background-color: #EAAA75;" onclick="xoa(this)" >Xóa</button>
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                </td>
-                <td>
-                    <button name="Dathang" type="button" style="padding: 8px 20px; width: 120px; font-size: 15px;border-radius: 12px; border: none; background-color: #EAAA75;">ĐẶT HÀNG</button>
-                </td>
-            </tr>
+        <table class="table-center" id="table-prod">
+            
         </table>
 
         <script>
 
             //xóa sp khỏi giỏ hàng
-            var giohang_td = document.createElement("td");
-            var giohang_td_nut = document.createElement("input")
-            giohang_td_nut.type = "button";
-            giohang_td_nut.value ="Xóa";
-            giohang_td_nut.setAttribute("onclick", "xoa(this)");
-            giohang_td.appendChild(giohang_td_nut);
-            giohang_tr.appendChild(giohang_td);
+            // var giohang_td = document.createElement("td");
+            // var giohang_td_nut = document.createElement("input")
+            // giohang_td_nut.type = "button";
+            // giohang_td_nut.value ="Xóa";
+            // giohang_td_nut.setAttribute("onclick", "xoa(this)");
+            // giohang_td.appendChild(giohang_td_nut);
+            // giohang_tr.appendChild(giohang_td);
 
-            var giohang = document.getElementById("giohang");
-            giohang.appendChild(giohang_tr);
+            // var giohang = document.getElementById("giohang");
+            // giohang.appendChild(giohang_tr);
 
             function xoa(x) {
                 var tr = x.parentElement.parentElement;
@@ -186,4 +131,5 @@
        
     </body>
 
+    <script src="./chitietgiohang.js"></script>
 </html>
