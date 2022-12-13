@@ -11,17 +11,17 @@
     <div class="product">
         <div id="top">
             <div id="hinh">
-                <img src="Image/sourcesp/Fresh Fruit Tea/Hồng trà bưởi mật ong.png" >
+                <img id="img" src="Image/sourcesp/Fresh Fruit Tea/Hồng trà bưởi mật ong.png" >
             </div>
             <div id="thongtin">
-                <h4>Hồng trà bưởi mật ong</h4>
-                <p>30.000đ</p>
+                <h4 id="name">Hồng trà bưởi mật ong</h4>
+                <p id="price">30.000đ</p>
                 <form>
-                   <input type="button" name="btngiam" value="-">
-                   <input type="text" name="txtsoluong" value="1">
-                   <input type="button" name="btngiam" value="+">
+                   <input type="button" id="des" name="btngiam" value="-">
+                   <input type="text" id="count" name="txtsoluong" value="1">
+                   <input type="button" id="inc" name="btngiam" value="+">
                    <br>
-                   <input type="button" value="Thêm vào giỏ hàng" id="btn_addtocart">
+                   <div  id="add-btn">Thêm vào giỏ hàng</div>
                 </form>
     
             </div>
@@ -34,48 +34,58 @@
                     <td colspan="2">Chọn đường (+0đ)</td>
                 </tr>
                 <tr>
-                    <td><form><input type="radio" checked="checked" width="30px">30%</form></td>
-                    <td><form><input type="radio" >50%</form></td>
-                    <td><form><input type="radio">70%</form></td>
-                    <td><form><input type="radio">100%</form></td>
+                    <form>
+                        <td>
+                        <input type="radio" name="supc"  width="30px">30%
+                        </td>
+                        <td><input type="radio" name="supc" value="50%">50%</td>
+                        <td><input type="radio" name="supc" value="70%">70%</td>
+                        <td><input type="radio" name="supc" value="100%">100%</td>
+                    </form>
                 </tr>
                 <tr>
                   <td colspan="2"> Chọn đá (+0đ)</td>
                 </tr>
                 <tr>
-                    <td width="25%" ><form><input type="radio">30%</form></td>
-                    <td width="25%" > <form><input type="radio">50%</form></td>
-                    <td width="25%"><form><input type="radio">70%</form></td>
-                    <td width="25%"><form><input type="radio">100%</form></td>
+                    <form>
+
+                        <td width="25%" ><input type="radio" name="icepc" value="30%">30%</td>
+                        <td width="25%" > <input type="radio" name="icepc" value="50%">50%</td>
+                        <td width="25%"><input type="radio" name="icepc" value="70%">70%</td>
+                        <td width="25%"><input type="radio" name="icepc" value="100%">100%</td>
+                    </form>
                 </tr>
-                <tr><td colspan="2">Chọn Topping</tr></tr>
+                <tr><td colspan="2">Chọn Topping</td></tr>
+                    <form>
+
+                        <tr>
+                            <td colspan="2"><input name="topping" value="Trân châu đen:7000" type="checkbox">Trân châu đen</td>
+                            <td colspan="4">+7000đ</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"> <input name="topping" value="Trân châu trắng:7000" type="checkbox">Trân châu trắng</td>
+                            <td colspan="4">+7000đ</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input name="topping" value="pudding trứng:8000" type="checkbox">Pudding trứng</td>
+                            <td colspan="4">+8000đ</td>
+                        </tr>
                 <tr>
-                    <td colspan="2"><form><input type="checkbox">Trân châu đen</form></td>
-                    <td colspan="4">+7000đ</td>
-                </tr>
-                <tr>
-                    <td colspan="2"> <form><input type="checkbox">Trân châu trắng</form></td>
-                    <td colspan="4">+7000đ</td>
-                </tr>
-                <tr>
-                    <td colspan="2"><form><input type="checkbox">Pudding trứng</form></td>
+                    <td colspan="2"><input name="topping" value="pudding socola:8000" type="checkbox"> Pudding socola</td>
                     <td colspan="4">+8000đ</td>
                 </tr>
                 <tr>
-                    <td colspan="2"><form><input type="checkbox"> Pudding socola</form></td>
+                    <td colspan="2"><input name="topping" value="pudding khoai môn:8000" type="checkbox"> Pudding khoai môn</td>
                     <td colspan="4">+8000đ</td>
                 </tr>
                 <tr>
-                    <td colspan="2"><form><input type="checkbox"> Pudding khoai môn</form></td>
+                    <td colspan="2"><input name="topping" value="trân châu phô mai:8000" type="checkbox"> Trân châu phô mai</td>
                     <td colspan="4">+8000đ</td>
                 </tr>
-                <tr>
-                    <td colspan="2"><form><input type="checkbox"> Trân châu phô mai</form></td>
-                    <td colspan="4">+8000đ</td>
-                </tr>
+            </form>
             </table>
         </div>
-
+        
     </div>
     
 </body>
