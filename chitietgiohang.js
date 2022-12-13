@@ -1,5 +1,5 @@
 let listProducts=[]
-const productTemplate=(imgSrc,sugarPercent,icePercent,price,nameProduct,number)=>{
+const productTemplate=(imgSrc,sugarPercent,icePercent,price,nameProduct,number,topping)=>{
     return `
     <tr class="spaceUnder">
         <td>
@@ -9,7 +9,7 @@ const productTemplate=(imgSrc,sugarPercent,icePercent,price,nameProduct,number)=
             <p style="text-align: left; font-family: url('font/Fahkwang-Regular.ttf');">
                 <b>${nameProduct}</b><br/><br/>
                 ${price} đồng<br/>
-                ${sugarPercent}% đường, ${icePercent}% đá, trân châu đen<br/>
+                ${sugarPercent}% đường, ${icePercent}% đá, ${topping}<br/>
                 Số lượng: ${number}
             </p>   
         </td>
@@ -19,14 +19,15 @@ const productTemplate=(imgSrc,sugarPercent,icePercent,price,nameProduct,number)=
     </tr>
     `
 }
-const productObject=(imgSrc,nameProduct,price,sugarPercent,icePercent,number)=>{
+const productObject=(imgSrc,nameProduct,price,sugarPercent,icePercent,number,topping)=>{
     return {
     imgSrc,
     nameProduct,
     price,
     sugarPercent,
     icePercent,
-    number
+    number,
+    topping
     }
 } 
 let pro1=productObject("Image/sourcesp/Mon_noi_bat/tra-man-hat-sen.png",
@@ -61,7 +62,8 @@ list?.forEach((ind)=>{
         pro.price,
         pro.sugarPer,
         pro.icePer,
-        pro.count)
+        pro.count,
+        pro.topping.split(':')[0])
     listProducts.push(prod)
 })
 listProducts?.forEach((prod)=>
@@ -71,7 +73,8 @@ listProducts?.forEach((prod)=>
         prod.icePercent,
         prod.price,
         prod.nameProduct,
-        prod.number)
+        prod.number,
+        prod.topping)
 })
 tableProduct.innerHTML=listHTML
 
